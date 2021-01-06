@@ -40,10 +40,10 @@ conky.config = {
 
 conky.text = [[
 ${color1}${font Oswald:size=10:bold}NETWORK ${color2} ${hr 2}
-${if_up wlp3s0}
-${color3}${font Open Sans:size=9}Down: ${downspeed wlp3s0}/s ${alignr}Up: ${upspeed wlp3s0} /s
-${color1}${color1}${downspeedgraph wlp3s0 20,90 444444 eeeeee} ${alignr}${color1}${upspeedgraph wlp3s0 20,90 444444 eeeeee}
-${color3}  Total: ${totaldown wlp3s0} ${alignr}Total: ${totalup wlp3s0}
+${if_up wlp45s0f3u1}
+${color3}${font Open Sans:size=9}Down: ${downspeed wlp45s0f3u1}/s ${alignr}Up: ${upspeed wlp45s0f3u1} /s
+${color1}${color1}${downspeedgraph wlp45s0f3u1 20,90 444444 eeeeee} ${alignr}${color1}${upspeedgraph wlp45s0f3u1 20,90 444444 eeeeee}
+${color3}  Total: ${totaldown wlp45s0f3u1} ${alignr}Total: ${totalup wlp45s0f3u1}
 ${else}${if_up enp0s20u1}
 ${color3}${font Open Sans:size=9}Down: ${downspeed enp0s20u1}/s ${alignr}Up: ${upspeed enp0s20u1} /s
 ${color1}${color1}${downspeedgraph enp0s20u1 20,90 444444 eeeeee} ${alignr}${color1}${upspeedgraph enp0s20u1 20,90 444444 eeeeee}
