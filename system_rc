@@ -41,6 +41,6 @@ conky.text = [[
 ${color1}${font Oswald:size=10:bold}SYSTEM ${color2} ${hr 2}
 ${color3}${font Open Sans:size=9}
 Hostname: $alignr$nodename
-Distribution: $alignr${exec cat /etc/issue.net}
+Distribution: $alignr${execi 86400 lsb_release -si} ${execi 86400 lsb_release -sr} ${execi 86400 lsb_release -sv}
 Kernel: $alignr$kernel
 Uptime: $alignr$uptime]];
