@@ -17,14 +17,15 @@ conky.config = {
 	own_window_argb_value = 180,
 	own_window_colour = '#224466',
 	double_buffer = true,
-	minimum_width = 225,
+	minimum_width = 225, minimum_height = 150,
+	maximum_width = 225, maximum_height = 150,
 	draw_shades = false,
 	draw_outline = false,
 	draw_borders = false,
 	draw_graph_borders = true,
 	default_color = '#101010',
 	default_shade_color = '#101010',
-	alignment = 'top_left',
+	alignment = 'top_right',
 	gap_x = 40,
 	gap_y = 40,
 	no_buffers = true,
@@ -42,4 +43,5 @@ conky.config = {
 conky.text = [[
 ${color1}${font Oswald:size=10:bold}TIME ${color2} ${hr 2} ${color3}${font}
 ${color3}${font Roboto:pixelsize=70}${alignr}${time %I:%M}${font}
-${color3}${font Open Sans:pixelsize=11}${alignr}${time %x}${font}]];
+
+${color3}${font Open Sans:pixelsize=16}${alignr}${time %x}${font}]];

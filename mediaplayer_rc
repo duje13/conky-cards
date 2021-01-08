@@ -22,9 +22,9 @@ conky.config = {
 	draw_graph_borders = true,
 	default_color = '#101010',
 	default_shade_color = '#101010',
-	alignment = 'top_left',
-	gap_x = 40,--320
-	gap_y = 353,--510
+	alignment = 'top_right',
+	gap_x = 855,
+	gap_y = 235,
 	no_buffers = true,
 	cpu_avg_samples = 1,
 	uppercase = false,
@@ -40,12 +40,12 @@ conky.config = {
 
 conky.text = [[
 ${color1}${font Oswald:size=10:bold}MEDIA PLAYER ${color2} ${hr 2}
-${if_match "${execi 10 python3 mediaplayer.py clementine -i}"=="yes"}
-${color3}${font Anitpasto:size=9}${execpi 4 python3 mediaplayer.py clementine -tamlr -w 45}
+${if_match "${execi 10 python3 mediaplayer.py vlc -i}"=="yes"}
+${color3}${font Anitpasto:size=9}${execpi 4 python3 mediaplayer.py vlc -tamlr -w 45}
 ${if_match "${execi 4 python3 mediaplayer.py -p}"=="Unknown"}\
 Progress: ${alignr}Unknown
 ${else}\
-Progress:${alignr}${color1}${execibar 4  python3 mediaplayer.py clementine -p}
+Progress:${alignr}${color1}${execibar 4  python3 mediaplayer.py vlc -p}
 ${endif}\
 ${else}
 ${color3}${font Open Sans:size=9}Not Running\
