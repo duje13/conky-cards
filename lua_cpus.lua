@@ -1,4 +1,4 @@
-function conky_mycpus()
+function conky_cpus()
     local file = io.popen("grep -c processor /proc/cpuinfo")
     local numcpus = file:read("*n")
     file:close()

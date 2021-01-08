@@ -1,5 +1,5 @@
 conky.config = {
-	lua_load = 'lua_test.lua',
+	lua_load = 'lua_cpus.lua',
 	background = false,
 	font = 'sans:size=10',
 --xftfont sans:size=10
@@ -44,7 +44,7 @@ ${color3}${font Open Sans:size=9}
 CPU Clock Speed: ${alignr}${freq_g} GHz
 Total Processes: ${alignr}$processes ($running_processes running)
 ${color3}CPU : ${cpu cpu0}% ${alignr}${color1}${cpubar cpu0 6,140}
-${lua_parse conky_mycpus}
+${lua_parse conky_cpus}
 
 ${color3}Top Processes:
 ${font Open Sans:pixelsize=9}NAME $alignr PID  CPU%  
